@@ -1,0 +1,14 @@
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\bin\Debug\QuanLyCLB.exe.config
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\bin\Debug\QuanLyCLB.exe
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\bin\Debug\QuanLyCLB.pdb
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.csproj.AssemblyReference.cache
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_ChuNhiemCLB.resources
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.Login.resources
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.Properties.Resources.resources
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.csproj.GenerateResource.cache
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.csproj.CoreCompileInputs.cache
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.exe
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.pdb
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_BiThu_DoanTruong.resources
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_DiaDiem.resources
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_CauLacBo.resources
