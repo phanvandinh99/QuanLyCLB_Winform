@@ -8,6 +8,10 @@ namespace QuanLyCLB
     {
         #region Kết nối csdl
         SqlConnection con = new SqlConnection(@"Data Source=(local);Initial Catalog=DataCLB;Integrated Security=True");
+        /* (local) : Tên sql server name
+         * 
+         Tên data là DataCLb
+         */
         public void opencon()
         {
             if (con.State == ConnectionState.Closed)

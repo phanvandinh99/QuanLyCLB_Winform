@@ -43,15 +43,37 @@ namespace QuanLyCLB
             txtTaiKhoan.Text = dataGridView_ThanhVien.CurrentRow.Cells[0].Value.ToString();
             txtMatKhau.Text = dataGridView_ThanhVien.CurrentRow.Cells[1].Value.ToString();
             txtHo.Text = dataGridView_ThanhVien.CurrentRow.Cells[2].Value.ToString();
-            txtTen.Text = dataGridView_ThanhVien.CurrentRow.Cells[2].Value.ToString();
+            txtTen.Text = dataGridView_ThanhVien.CurrentRow.Cells[3].Value.ToString();
         }
-        private void btnCapNhat_Click(object sender, EventArgs e)
-        {
 
+        private void btnClears_Click(object sender, EventArgs e)
+        {
+            Clears();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCapNhat_Click_1(object sender, EventArgs e)
+        {
             if (txtTaiKhoan.Text == "")
             {
                 MessageBox.Show("Nhập MSSV để Cập nhật", "Thông Báo Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTaiKhoan.Focus();
+                return;
+            }
+            if (txtHo.Text == "")
+            {
+                MessageBox.Show("Mời nhập Họ", "Thông Báo Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtHo.Focus();
+                return;
+            }
+            if (txtTen.Text == "")
+            {
+                MessageBox.Show("Mời nhập Tên", "Thông Báo Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTen.Focus();
                 return;
             }
             else
@@ -63,7 +85,7 @@ namespace QuanLyCLB
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        private void btnXoa_Click_1(object sender, EventArgs e)
         {
             if (txtTaiKhoan.Text == "")
             {
@@ -80,12 +102,12 @@ namespace QuanLyCLB
             }
         }
 
-        private void btnClears_Click(object sender, EventArgs e)
+        private void btnClears_Click_1(object sender, EventArgs e)
         {
             Clears();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void btnClose_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -42,7 +42,7 @@ namespace QuanLyCLB
             txtTaiKhoan.Text = dataGridView_ChuNhiem.CurrentRow.Cells[0].Value.ToString();
             txtMatKhau.Text = dataGridView_ChuNhiem.CurrentRow.Cells[1].Value.ToString();
             txtHo.Text = dataGridView_ChuNhiem.CurrentRow.Cells[2].Value.ToString();
-            txtTen.Text = dataGridView_ChuNhiem.CurrentRow.Cells[2].Value.ToString();
+            txtTen.Text = dataGridView_ChuNhiem.CurrentRow.Cells[3].Value.ToString();
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -52,6 +52,18 @@ namespace QuanLyCLB
             {
                 MessageBox.Show("Nhập MSSV để Cập nhật", "Thông Báo Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtTaiKhoan.Focus();
+                return;
+            }
+            if (txtHo.Text == "")
+            {
+                MessageBox.Show("Mời nhập Họ", "Thông Báo Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtHo.Focus();
+                return;
+            }
+            if (txtTen.Text == "")
+            {
+                MessageBox.Show("Mời nhập Tên", "Thông Báo Lỗi!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTen.Focus();
                 return;
             }
             else

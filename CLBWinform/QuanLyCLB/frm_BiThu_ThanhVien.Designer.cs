@@ -58,6 +58,7 @@ namespace QuanLyCLB
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "Thoát";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // groupBox1
             // 
@@ -170,6 +171,7 @@ namespace QuanLyCLB
             this.btnClears.TabIndex = 7;
             this.btnClears.Text = "Clears";
             this.btnClears.UseVisualStyleBackColor = true;
+            this.btnClears.Click += new System.EventHandler(this.btnClears_Click_1);
             // 
             // btnXoa
             // 
@@ -180,6 +182,7 @@ namespace QuanLyCLB
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnCapNhat
             // 
@@ -190,6 +193,7 @@ namespace QuanLyCLB
             this.btnCapNhat.TabIndex = 5;
             this.btnCapNhat.Text = "Cập Nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click_1);
             // 
             // dataGridView_ThanhVien
             // 
