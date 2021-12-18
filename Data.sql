@@ -12,8 +12,8 @@ create table BiThu
 	SDT varchar(10) null,
 )
 go
-insert into BiThu(MSBT, MatKhau, Ho, Ten, GioiTinh, SDT) values ('BT01', 'abc123', 'Phan', 'A', 'Nam', '0123456789');
-insert into BiThu(MSBT, MatKhau, Ho, Ten, GioiTinh, SDT) values ('BT02', 'abc123', 'Thị', 'Nhi', 'Nu', '0256254524');
+insert into BiThu(MSBT, MatKhau, Ho, Ten, GioiTinh, SDT) values ('BT01', 'abc123', N'Phan', N'A', 'Nam', '0123456789');
+insert into BiThu(MSBT, MatKhau, Ho, Ten, GioiTinh, SDT) values ('BT02', 'abc123', N'Thị', N'Nhi', 'Nu', '0256254524');
 go
 create table DiaDiem
 (
@@ -89,35 +89,3 @@ insert into GiaNhap(MSSV, MaCLB, NgayGiaNhap) values ('SV001', 'CLB01', '02/5/20
 insert into GiaNhap(MSSV, MaCLB, NgayGiaNhap) values ('SV001', 'CLB02', '06/5/2020');
 insert into GiaNhap(MSSV, MaCLB, NgayGiaNhap) values ('SV002', 'CLB01', '06/11/2021');
 insert into GiaNhap(MSSV, MaCLB, NgayGiaNhap) values ('SV002', 'CLB02', '11/12/2021');
-
---==================================== Câu truy vấn demo Nhật Minh ====================================-- 
-update ThanhVien set MatKhau = '123', Ho = N'Phan', Ten = N'Định', Khoa = 'CNTT', NgaySinh = '01/01/2021', GioiTinh = 'Nam', SDT = '123', ChucVu = 'ThanhVien'
-where MSSV = '1'
-delete from ThanhVien where MSSV = '1';
-select * from ThanhVien
-----
-update DiaDiem set TenDD = N'Huế', GhiChu= N'Quảng Lợi' where MaDD = '1'
-delete from DiaDiem where MaDD = ''
-select * from DiaDiem
-
----
-update CLB set  MSBT = 'BT01', TenCLB = N'Đính', LienKetFB = N'á' where MaCLB = '1'
-delete from CLB where MaCLB = ''
-Select * from CLB
-Select * from BiThu order by Ten
-
---
-select T.MSSV, T.Ho, T.Ten, T.Khoa, T.NgaySinh, T.GioiTinh, T.SDT, T.ChucVu
-from CLB C
-join GiaNhap G ON C.MaCLB = G.MaCLB
-join ThanhVien T ON G.MSSV = T.MSSV
-where C.TenCLB like N'CLB Gitar'
-
-
-
-
-
-
-
-
-

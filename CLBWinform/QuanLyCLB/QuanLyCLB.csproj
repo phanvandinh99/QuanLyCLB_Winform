@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_BiThu_ChuNhiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BiThu_ChuNhiem.Designer.cs">
+      <DependentUpon>frm_BiThu_ChuNhiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_BiThu_DoanTruong.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_BiThu_DoanTruong.Designer.cs">
       <DependentUpon>frm_BiThu_DoanTruong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BiThu_ThanhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BiThu_ThanhVien.Designer.cs">
+      <DependentUpon>frm_BiThu_ThanhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_CauLacBo.cs">
       <SubType>Form</SubType>
@@ -85,8 +97,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_BiThu_ChuNhiem.resx">
+      <DependentUpon>frm_BiThu_ChuNhiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_BiThu_DoanTruong.resx">
       <DependentUpon>frm_BiThu_DoanTruong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BiThu_ThanhVien.resx">
+      <DependentUpon>frm_BiThu_ThanhVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CauLacBo.resx">
       <DependentUpon>frm_CauLacBo.cs</DependentUpon>

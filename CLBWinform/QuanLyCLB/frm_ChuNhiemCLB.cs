@@ -134,7 +134,6 @@ namespace QuanLyCLB
             }
             else
             {
-                string ns = string.Format("{0:dd/MMM/yyyy}", dateTime_NgaySinh.Value);
                 db.Exe("delete from ThanhVien where MSSV = '"+txtMSSV.Text+"'");
                 MessageBox.Show("Thành Công", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clears();

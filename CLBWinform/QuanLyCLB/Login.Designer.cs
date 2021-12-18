@@ -31,18 +31,18 @@ namespace QuanLyCLB
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtMatKhau = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.btnDanhNhap = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,17 @@ namespace QuanLyCLB
             this.panel3.TabIndex = 2;
             this.panel3.UseWaitCursor = true;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::QuanLyCLB.Properties.Resources.key;
+            this.pictureBox3.Location = new System.Drawing.Point(13, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(48, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.UseWaitCursor = true;
+            // 
             // txtMatKhau
             // 
             this.txtMatKhau.Cursor = System.Windows.Forms.Cursors.WaitCursor;
@@ -91,48 +102,6 @@ namespace QuanLyCLB
             this.panel2.TabIndex = 1;
             this.panel2.UseWaitCursor = true;
             // 
-            // txtTenDangNhap
-            // 
-            this.txtTenDangNhap.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenDangNhap.Location = new System.Drawing.Point(63, 14);
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(226, 34);
-            this.txtTenDangNhap.TabIndex = 0;
-            this.txtTenDangNhap.UseWaitCursor = true;
-            // 
-            // button2
-            // 
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(174, 187);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 41);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "THOÁT";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnDanhNhap
-            // 
-            this.btnDanhNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDanhNhap.Location = new System.Drawing.Point(297, 187);
-            this.btnDanhNhap.Name = "btnDanhNhap";
-            this.btnDanhNhap.Size = new System.Drawing.Size(122, 41);
-            this.btnDanhNhap.TabIndex = 4;
-            this.btnDanhNhap.Text = "ĐĂNG NHẬP";
-            this.btnDanhNhap.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::QuanLyCLB.Properties.Resources.key;
-            this.pictureBox3.Location = new System.Drawing.Point(13, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(48, 37);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.UseWaitCursor = true;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::QuanLyCLB.Properties.Resources.user1;
@@ -143,6 +112,16 @@ namespace QuanLyCLB
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.UseWaitCursor = true;
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenDangNhap.Location = new System.Drawing.Point(63, 14);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(226, 34);
+            this.txtTenDangNhap.TabIndex = 0;
+            this.txtTenDangNhap.UseWaitCursor = true;
             // 
             // pictureBox1
             // 
@@ -156,10 +135,36 @@ namespace QuanLyCLB
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
             // 
+            // button2
+            // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.Location = new System.Drawing.Point(174, 187);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 41);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "THOÁT";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnDanhNhap
+            // 
+            this.btnDanhNhap.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnDanhNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDanhNhap.Location = new System.Drawing.Point(297, 187);
+            this.btnDanhNhap.Name = "btnDanhNhap";
+            this.btnDanhNhap.Size = new System.Drawing.Size(122, 41);
+            this.btnDanhNhap.TabIndex = 4;
+            this.btnDanhNhap.Text = "ĐĂNG NHẬP";
+            this.btnDanhNhap.UseVisualStyleBackColor = true;
+            this.btnDanhNhap.Click += new System.EventHandler(this.btnDanhNhap_Click);
+            // 
             // Login
             // 
+            this.AcceptButton = this.btnDanhNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(499, 246);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
@@ -172,9 +177,9 @@ namespace QuanLyCLB
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

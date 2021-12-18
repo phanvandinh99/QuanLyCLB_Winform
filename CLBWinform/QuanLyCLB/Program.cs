@@ -16,7 +16,7 @@ namespace QuanLyCLB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_ThongTinCLB());
+            Application.Run(new Login());
         }
     }
 }
