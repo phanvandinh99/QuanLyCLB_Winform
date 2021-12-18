@@ -96,9 +96,22 @@ where MSSV = '1'
 delete from ThanhVien where MSSV = '1';
 select * from ThanhVien
 ----
-update DiaDiem set TenDD = N'Huế', GhiChu= N'Quảng Lợi'
+update DiaDiem set TenDD = N'Huế', GhiChu= N'Quảng Lợi' where MaDD = '1'
+delete from DiaDiem where MaDD = ''
 select * from DiaDiem
 
+---
+update CLB set  MSBT = 'BT01', TenCLB = N'Đính', LienKetFB = N'á' where MaCLB = '1'
+delete from CLB where MaCLB = ''
+Select * from CLB
+Select * from BiThu order by Ten
+
+--
+select T.MSSV, T.Ho, T.Ten, T.Khoa, T.NgaySinh, T.GioiTinh, T.SDT, T.ChucVu
+from CLB C
+join GiaNhap G ON C.MaCLB = G.MaCLB
+join ThanhVien T ON G.MSSV = T.MSSV
+where C.TenCLB like N'CLB Gitar'
 
 
 

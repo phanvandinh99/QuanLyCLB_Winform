@@ -21,5 +21,17 @@ namespace QuanLyCLB
         {
 
         }
+
+        private void QuanLyCLB_Click(object sender, EventArgs e)
+        {
+            frm_CauLacBo clb = new frm_CauLacBo();
+            clb.ShowDialog();
+        }
+
+        private void QuanLyDiaDiem_Click(object sender, EventArgs e)
+        {
+            frm_DiaDiem dd = new frm_DiaDiem();
+            dd.ShowDialog();
+        }
     }
 }

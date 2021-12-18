@@ -25,6 +25,14 @@ namespace QuanLyCLB
                 dataGridView_clb.DataSource = dt;
             }
         }
+        public void HienThiCBXBiThu()
+        {
+            string sql = "Select * from BiThu order by Ten";
+            cbxMSBT.DataSource = db.red(sql);
+            cbxMSBT.DisplayMember = "MSBT";
+            cbxMSBT.ValueMember = "MSBT";
+
+        }
         public void Clears()
         {
             txtMaCLB.Clear();
@@ -35,11 +43,7 @@ namespace QuanLyCLB
         private void frm_CauLacBo_Load(object sender, EventArgs e)
         {
             load();
-
-            string sql = "Select * from BiThu order by Ten";
-            cbxMSBT.DataSource = db.red(sql);
-            cbxMSBT.DisplayMember = "MSBT";
-            cbxMSBT.ValueMember = "MSBT";
+            HienThiCBXBiThu();
         }
 
         private void btnThem_Click(object sender, EventArgs e)

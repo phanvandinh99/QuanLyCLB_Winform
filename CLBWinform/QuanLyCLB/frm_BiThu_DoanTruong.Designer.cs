@@ -33,11 +33,11 @@ namespace QuanLyCLB
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.QuanLyTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
-            this.QuanLyCLB = new System.Windows.Forms.ToolStripMenuItem();
-            this.QuanLyDiaDiem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nhânViênToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.bíThưToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.QuanLyCLB = new System.Windows.Forms.ToolStripMenuItem();
+            this.QuanLyDiaDiem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
@@ -82,35 +82,37 @@ namespace QuanLyCLB
             this.QuanLyTaiKhoan.Text = "Quản lý Tài Khoản";
             this.QuanLyTaiKhoan.Click += new System.EventHandler(this.QuanLyTaiKhoan_Click);
             // 
+            // nhânViênToolStripMenuItem
+            // 
+            this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.nhânViênToolStripMenuItem.Text = "Chủ Nhiệm";
+            // 
+            // nhânViênToolStripMenuItem1
+            // 
+            this.nhânViênToolStripMenuItem1.Name = "nhânViênToolStripMenuItem1";
+            this.nhânViênToolStripMenuItem1.Size = new System.Drawing.Size(165, 26);
+            this.nhânViênToolStripMenuItem1.Text = "Thành Viên";
+            // 
+            // bíThưToolStripMenuItem
+            // 
+            this.bíThưToolStripMenuItem.Name = "bíThưToolStripMenuItem";
+            this.bíThưToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.bíThưToolStripMenuItem.Text = "Bí Thư";
+            // 
             // QuanLyCLB
             // 
             this.QuanLyCLB.Name = "QuanLyCLB";
             this.QuanLyCLB.Size = new System.Drawing.Size(102, 24);
             this.QuanLyCLB.Text = "Quản lý CLB";
+            this.QuanLyCLB.Click += new System.EventHandler(this.QuanLyCLB_Click);
             // 
             // QuanLyDiaDiem
             // 
             this.QuanLyDiaDiem.Name = "QuanLyDiaDiem";
             this.QuanLyDiaDiem.Size = new System.Drawing.Size(140, 24);
             this.QuanLyDiaDiem.Text = "Quản lý Địa Điểm";
-            // 
-            // nhânViênToolStripMenuItem
-            // 
-            this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.nhânViênToolStripMenuItem.Text = "Chủ Nhiệm";
-            // 
-            // nhânViênToolStripMenuItem1
-            // 
-            this.nhânViênToolStripMenuItem1.Name = "nhânViênToolStripMenuItem1";
-            this.nhânViênToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.nhânViênToolStripMenuItem1.Text = "Thành Viên";
-            // 
-            // bíThưToolStripMenuItem
-            // 
-            this.bíThưToolStripMenuItem.Name = "bíThưToolStripMenuItem";
-            this.bíThưToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bíThưToolStripMenuItem.Text = "Bí Thư";
+            this.QuanLyDiaDiem.Click += new System.EventHandler(this.QuanLyDiaDiem_Click);
             // 
             // frm_BiThu_DoanTruong
             // 
