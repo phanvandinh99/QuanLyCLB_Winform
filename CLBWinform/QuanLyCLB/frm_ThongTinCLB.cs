@@ -19,7 +19,7 @@ namespace QuanLyCLB
         }
         private void loadThanhVien_CLB(string name)
         {
-            DataTable dt = db.red("select T.MSSV, T.Ho, T.Ten, T.Khoa, T.NgaySinh, T.GioiTinh, T.SDT, T.ChucVu from CLB C join GiaNhap G ON C.MaCLB = G.MaCLB join ThanhVien T ON G.MSSV = T.MSSV where C.TenCLB like N'"+name+"'");
+            DataTable dt = db.red("select T.MSSV, T.Ho, T.Ten, T.Khoa, T.NgaySinh, T.GioiTinh, T.SDT from CLB C join GiaNhap G ON C.MaCLB = G.MaCLB join ThanhVien T ON G.MSSV = T.MSSV where C.TenCLB like N'"+name+"'");
             if (dt != null)
             {
                 dataGridView_ThanhVien.DataSource = dt;

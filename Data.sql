@@ -124,8 +124,9 @@ join CLB C ON C.MaCLB = G.MaCLB order by TV.Ten
 
 update GiaNhap set MaCLB = 'CLB02' where MSSV = 'SV001'
 
-select * from GiaNhap
-
+select * from ThanhVien
+select * from ChuNhiem
+select * from BiThu
 
 select * 
 from ChuNhiem C1
