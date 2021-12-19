@@ -21,7 +21,7 @@ namespace QuanLyCLB
         // Hiển thị lên datagridview
         private void load()
         {
-            DataTable dt = db.red("Select * from ThanhVien order by Ten");
+            DataTable dt = db.red("select TV.MSSV, TV.MatKhau, TV.Ho, TV.Ten, TV.Khoa, TV.NgaySinh, TV.GioiTinh, TV.SDT, C.TenCLB from ThanhVien TV join GiaNhap G ON TV.MSSV = G.MSSV join CLB C ON C.MaCLB = G.MaCLB order by TV.Ten");
             if (dt != null)
             {
                 dataGridView_CLB.DataSource = dt;
@@ -30,15 +30,16 @@ namespace QuanLyCLB
         private void HienThiGioiTinh()
         {
             cbxGioiTinh.Items.Add("Nam");
-            cbxGioiTinh.Items.Add("Nu");
+            cbxGioiTinh.Items.Add("Nữ");
             cbxGioiTinh.SelectedIndex = 0;
 
         }
-        private void HienThiThanhVien()
+        public void HienThiCBXBiThu()
         {
-            cbxChucvu.Items.Add("ThanhVien");
-            cbxChucvu.Items.Add("ChuNhiem");
-            cbxChucvu.SelectedIndex = 0;
+            string sql = "Select * from CLB order by TenCLB";
+            cbxCLB.DataSource = db.red(sql);
+            cbxCLB.DisplayMember = "TenCLB";
+            cbxCLB.ValueMember = "MaCLB";
 
         }
         private void Clears()
@@ -54,7 +55,7 @@ namespace QuanLyCLB
         private void frm_ChuNhiemCLB_Load(object sender, EventArgs e)
         {
             load();
-            HienThiThanhVien();
+            HienThiCBXBiThu();
             HienThiGioiTinh();
         }
 
@@ -68,7 +69,7 @@ namespace QuanLyCLB
             dateTime_NgaySinh.Value = DateTime.Parse(dataGridView_CLB.CurrentRow.Cells[5].Value.ToString());
             cbxGioiTinh.Text = dataGridView_CLB.CurrentRow.Cells[6].Value.ToString();
             txtSDT.Text = dataGridView_CLB.CurrentRow.Cells[7].Value.ToString();
-            cbxChucvu.Text = dataGridView_CLB.CurrentRow.Cells[8].Value.ToString();
+            cbxCLB.Text = dataGridView_CLB.CurrentRow.Cells[8].Value.ToString();
         }
 
         private void btnClears_Click(object sender, EventArgs e)
@@ -109,7 +110,11 @@ namespace QuanLyCLB
                     return;
                 }
                 string ns = string.Format("{0:dd/MMM/yyyy}", dateTime_NgaySinh.Value);
-                db.Exe("insert into ThanhVien(MSSV, MatKhau, Ho, Ten, Khoa, NgaySinh, GioiTinh, SDT, ChucVu) values ('" + txtMSSV.Text + "', '" + txtMatKhau.Text + "', N'" + txtHo.Text + "', N'" + txtTen.Text + "', N'" + txtKhoa.Text + "', '" + ns + "', N'" + cbxGioiTinh.Text + "', '" + txtSDT.Text + "', '" + cbxChucvu.Text + "')");
+                string date = string.Format("{0:dd/MMM/yyyy}", DateTime.Now);
+
+                db.Exe("insert into ThanhVien(MSSV, MatKhau, Ho, Ten, Khoa, NgaySinh, GioiTinh, SDT) values ('" + txtMSSV.Text + "', '" + txtMatKhau.Text + "', N'" + txtHo.Text + "', N'" + txtTen.Text + "', N'" + txtKhoa.Text + "', '" + ns + "', N'" + cbxGioiTinh.Text + "', '" + txtSDT.Text + "')");
+                db.Exe("insert into GiaNhap(MSSV, MaCLB, NgayGiaNhap) values ('" + txtMSSV.Text + "', '" + cbxCLB.SelectedValue.ToString() + "', '" + date + "')"); //add vào clb
+                MessageBox.Show("Thêm mới thành công", "Thông Báo!", MessageBoxButtons.OK);
                 load();
                 Clears();
             }
@@ -134,7 +139,8 @@ namespace QuanLyCLB
             }
             else
             {
-                db.Exe("delete from ThanhVien where MSSV = '"+txtMSSV.Text+"'");
+                db.Exe("delete from GiaNhap where MSSV = '" + txtMSSV.Text + "'");
+                db.Exe("delete from ThanhVien where MSSV = '" + txtMSSV.Text + "'");
                 MessageBox.Show("Thành Công", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clears();
                 load();
@@ -152,7 +158,8 @@ namespace QuanLyCLB
             else
             {
                 string ns = string.Format("{0:dd/MMM/yyyy}", dateTime_NgaySinh.Value);
-                db.Exe("update ThanhVien set MatKhau = '" + txtMatKhau.Text + "', Ho = N'" + txtHo.Text + "', Ten = N'" + txtTen.Text + "', Khoa = '" + txtKhoa.Text + "', NgaySinh = '" + ns + "', GioiTinh = '" + cbxGioiTinh.Text + "', SDT = '" + txtSDT.Text + "', ChucVu = '" + cbxChucvu.Text + "' where MSSV = '" + txtMSSV.Text + "'");
+                db.Exe("update ThanhVien set MatKhau = '" + txtMatKhau.Text + "', Ho = N'" + txtHo.Text + "', Ten = N'" + txtTen.Text + "', Khoa = '" + txtKhoa.Text + "', NgaySinh = '" + ns + "', GioiTinh = '" + cbxGioiTinh.Text + "', SDT = '" + txtSDT.Text + "' where MSSV = '" + txtMSSV.Text + "'");
+                db.Exe("update GiaNhap set MaCLB = '" + cbxCLB.SelectedValue.ToString() + "' where MSSV = '" + txtMSSV.Text + "'");
                 MessageBox.Show("Thành Công", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clears();
                 load();

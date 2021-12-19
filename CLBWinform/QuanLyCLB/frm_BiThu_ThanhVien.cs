@@ -27,7 +27,7 @@ namespace QuanLyCLB
         }
         private void load()
         {
-            DataTable dt = db.red("select MSSV, MatKhau, Ho, Ten from ThanhVien where ChucVu = 'ThanhVien'");
+            DataTable dt = db.red("select MSSV, MatKhau, Ho, Ten from ThanhVien");
             if (dt != null)
             {
                 dataGridView_ThanhVien.DataSource = dt;

@@ -42,7 +42,8 @@ namespace QuanLyCLB
                 string taiKhoan = txtTenDangNhap.Text.Trim();
                 string matKau = txtMatKhau.Text.Trim();
 
-                DataTable thanhVien = db.red("select * from ThanhVien where MSSV = '" + taiKhoan + "' AND MatKhau = '" + matKau + "' AND ChucVu = 'ThanhVien'"); // thành viên
+                // Đăng nhập cho thành viên
+                DataTable thanhVien = db.red("select * from ThanhVien where MSSV = '" + taiKhoan + "' AND MatKhau = '" + matKau + "'"); // thành viên
                 if (thanhVien.Rows.Count == 1)
                 {
                     frm_ThongTinCLB ttclb = new frm_ThongTinCLB();
@@ -51,7 +52,8 @@ namespace QuanLyCLB
                 }
                 else
                 {
-                    DataTable chuNhiem = db.red("select * from ThanhVien where MSSV = '" + taiKhoan + "' AND MatKhau = '" + matKau + "' AND ChucVu = 'ChuNhiem'"); // Chủ nhiệm
+
+                    DataTable chuNhiem = db.red("select * from ChuNhiem where MaSCN = '" + taiKhoan + "' AND MatKhau = '" + matKau + "'"); // Chủ nhiệm
                     if (chuNhiem.Rows.Count == 1)
                     {
                         frm_ChuNhiemCLB cnclb = new frm_ChuNhiemCLB();

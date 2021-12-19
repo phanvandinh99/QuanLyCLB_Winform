@@ -30,14 +30,14 @@ namespace QuanLyCLB
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxMSBT = new System.Windows.Forms.ComboBox();
+            this.txtFB = new System.Windows.Forms.TextBox();
+            this.txtTenCLB = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtMaCLB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTenCLB = new System.Windows.Forms.TextBox();
-            this.txtFB = new System.Windows.Forms.TextBox();
-            this.cbxMSBT = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnClears = new System.Windows.Forms.Button();
@@ -67,6 +67,62 @@ namespace QuanLyCLB
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin câu lạc bộ";
             // 
+            // cbxMSBT
+            // 
+            this.cbxMSBT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxMSBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbxMSBT.FormattingEnabled = true;
+            this.cbxMSBT.Location = new System.Drawing.Point(113, 80);
+            this.cbxMSBT.Name = "cbxMSBT";
+            this.cbxMSBT.Size = new System.Drawing.Size(208, 28);
+            this.cbxMSBT.TabIndex = 9;
+            // 
+            // txtFB
+            // 
+            this.txtFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtFB.Location = new System.Drawing.Point(113, 182);
+            this.txtFB.Name = "txtFB";
+            this.txtFB.Size = new System.Drawing.Size(208, 27);
+            this.txtFB.TabIndex = 8;
+            // 
+            // txtTenCLB
+            // 
+            this.txtTenCLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenCLB.Location = new System.Drawing.Point(113, 131);
+            this.txtTenCLB.Name = "txtTenCLB";
+            this.txtTenCLB.Size = new System.Drawing.Size(208, 27);
+            this.txtTenCLB.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.Location = new System.Drawing.Point(16, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 20);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "FB";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(11, 131);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 20);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Tên CLB";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(11, 80);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(84, 20);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Mã Số BT";
+            // 
             // txtMaCLB
             // 
             this.txtMaCLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -84,62 +140,6 @@ namespace QuanLyCLB
             this.label1.Size = new System.Drawing.Size(71, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã CLB";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(11, 80);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 20);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Mã Số BT";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(11, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 20);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Tên CLB";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(16, 182);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 20);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "FB";
-            // 
-            // txtTenCLB
-            // 
-            this.txtTenCLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenCLB.Location = new System.Drawing.Point(113, 131);
-            this.txtTenCLB.Name = "txtTenCLB";
-            this.txtTenCLB.Size = new System.Drawing.Size(208, 27);
-            this.txtTenCLB.TabIndex = 7;
-            // 
-            // txtFB
-            // 
-            this.txtFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtFB.Location = new System.Drawing.Point(113, 182);
-            this.txtFB.Name = "txtFB";
-            this.txtFB.Size = new System.Drawing.Size(208, 27);
-            this.txtFB.TabIndex = 8;
-            // 
-            // cbxMSBT
-            // 
-            this.cbxMSBT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxMSBT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbxMSBT.FormattingEnabled = true;
-            this.cbxMSBT.Location = new System.Drawing.Point(113, 80);
-            this.cbxMSBT.Name = "cbxMSBT";
-            this.cbxMSBT.Size = new System.Drawing.Size(208, 28);
-            this.cbxMSBT.TabIndex = 9;
             // 
             // groupBox2
             // 

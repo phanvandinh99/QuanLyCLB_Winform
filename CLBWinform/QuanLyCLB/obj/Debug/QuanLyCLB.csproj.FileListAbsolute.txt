@@ -15,3 +15,4 @@ C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\De
 C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_ThongTinCLB.resources
 C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_BiThu_ChuNhiem.resources
 C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_BiThu_ThanhVien.resources
+C:\Users\phanv\OneDrive\Máy tính\QuanLyCLB_Winform\CLBWinform\QuanLyCLB\obj\Debug\QuanLyCLB.frm_BiThu_QLChuNhiem.resources

@@ -19,7 +19,7 @@ namespace QuanLyCLB
         }
         private void load()
         {
-            DataTable dt = db.red("select MSSV, MatKhau, Ho, Ten from ThanhVien where ChucVu = 'ChuNhiem'");
+            DataTable dt = db.red("select MaSCN, MatKhau, Ho, Ten from ChuNhiem");
             if (dt != null)
             {
                 dataGridView_ChuNhiem.DataSource = dt;
@@ -68,7 +68,7 @@ namespace QuanLyCLB
             }
             else
             {
-                db.Exe("update ThanhVien set MatKhau = '"+txtMatKhau.Text+"', Ho = N'"+txtHo.Text+"', Ten = N'"+txtTen.Text+"' where MSSV = '"+txtTaiKhoan.Text+"'");
+                db.Exe("update ChuNhiem set MatKhau = '"+txtMatKhau.Text+"', Ho = N'"+txtHo.Text+"', Ten = N'"+txtTen.Text+"' where MaSCN = '"+txtTaiKhoan.Text+"'");
                 MessageBox.Show("Thành Công", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clears();
                 load();
@@ -85,7 +85,7 @@ namespace QuanLyCLB
             }
             else
             {
-                db.Exe("delete from ThanhVien where MSSV = '" + txtTaiKhoan.Text + "'");
+                db.Exe("delete from ChuNhiem where MaSCN = '" + txtTaiKhoan.Text + "'");
                 MessageBox.Show("Thành Công", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clears();
                 load();

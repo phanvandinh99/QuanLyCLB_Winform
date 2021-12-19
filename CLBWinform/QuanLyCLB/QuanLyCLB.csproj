@@ -58,6 +58,12 @@
     <Compile Include="frm_BiThu_DoanTruong.Designer.cs">
       <DependentUpon>frm_BiThu_DoanTruong.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_BiThu_QLChuNhiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BiThu_QLChuNhiem.Designer.cs">
+      <DependentUpon>frm_BiThu_QLChuNhiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_BiThu_ThanhVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_BiThu_DoanTruong.resx">
       <DependentUpon>frm_BiThu_DoanTruong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BiThu_QLChuNhiem.resx">
+      <DependentUpon>frm_BiThu_QLChuNhiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_BiThu_ThanhVien.resx">
       <DependentUpon>frm_BiThu_ThanhVien.cs</DependentUpon>
