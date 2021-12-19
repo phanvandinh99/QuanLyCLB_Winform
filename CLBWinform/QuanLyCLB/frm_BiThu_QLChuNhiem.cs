@@ -172,7 +172,7 @@ namespace QuanLyCLB
             {
                 string ns = string.Format("{0:dd/MMM/yyyy}", dateTime_NgaySinh.Value);
                 db.Exe("update ChuNhiem set MatKhau = '"+txtMatKhau.Text+"', Ho=N'"+txtHo.Text+"', Ten =N'"+txtTen.Text+"', Khoa = N'"+txtKhoa.Text+"', NgaySinh = '"+ns+"', GioiTinh = N'"+cbxGioiTinh.Text+"', SDT = '"+txtSDT.Text+"' where MaSCN ='"+txtMaSCN.Text+"' ");
-                db.Exe("update CLB set  MSBT = '" + cbxMSBT.SelectedValue.ToString() + "', TenCLB = N'" + txtTenCLB.Text + "', LienKetFB = N'" + txtFB.Text + "' where MaCLB = '" + txtMaCLB.Text + "'");
+                db.Exe("update CLB set  MSBT = '" + cbxMSBT.SelectedValue.ToString() + "', TenCLB = N'" + txtTenCLB.Text + "', LienKetFB = N'" + txtFB.Text + "' where MaSCN = '" + txtMaSCN.Text + "'");
                 MessageBox.Show("Thành Công", "Thông Báo!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clears();
                 load();
